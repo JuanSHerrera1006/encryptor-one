@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen" />
+    <title>Encriptador ONE</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="encryptor-container">
+        <div class="encryptor-item logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="Logo de ALURA"
+            class="logo__img"
+          />
+        </div>
+        <div class="encryptor-item encryptor-input">
+          <textarea
+            name="encryptor-data"
+            id="user-input"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+          <div class="encryptor__alert-box">
+            <img src="./assets/images/alert.png" alt="" srcset="" />
+            <span>Solo letras minusculas y sin acentos.</span>
+          </div>
+          <div class="encryptor__buttons-box center-elements">
+            <button class="btn-encrypt" id="btn-encrypt">Encriptar</button>
+            <button class="btn-decrypt" id="btn-decrypt">Desencriptar</button>
+          </div>
+        </div>
+        <div class="encryptor-item encryptor-output center-elements">
+          <textarea id="user-output" class="display-none" readonly></textarea>
+          <div class="encryptor-output__img-box" id="img-box">
+            <img
+              src="./assets/images/not-found-image.png"
+              alt="Chico observado un diamante con una lupa (animado)."
+              class="encryptor-output__img"
+            />
+          </div>
+          <div class="encryptor-output__msg-box" id="msg-box">
+            <p class="encryptor-item__title">Ningún mensaje fue encontrado</p>
+            <p class="encryptor-item__text">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <div class="center-elements w-100">
+            <button class="btn-copy display-none" id="btn-copy">
+              Copiar texto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
