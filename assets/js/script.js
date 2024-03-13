@@ -47,7 +47,7 @@ const manipulateDOM = (output, cl = false) => {
 }
 
 const valideInput = (input) => {
-  const regEx = /^[a-z]+$/
+  const regEx = /^[a-z\s]+$/
   return !regEx.test(input)
 }
 
